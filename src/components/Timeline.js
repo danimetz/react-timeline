@@ -7,7 +7,7 @@ const Timeline = (props) => {
     return <TimelineEvent
       person={event.person}
       status={event.status}
-      timestamp={event.timestamp}
+      timeStamp={event.timeStamp}
       key={index}
       />
     });
