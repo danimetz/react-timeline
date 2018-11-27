@@ -20,21 +20,12 @@ const events = [
 class App extends Component {
   render() {
     console.log(timelineData);
-    const timelineEvents = events.map((event,index) => {
-      return <TimelineEvent
-        person={event.person}
-        status={event.status}
-        timestamp={event.timestamp}
-        key={index}
-        />
-    });
-
 
     // Customize the code below
     return (
       <div className="App">
         <header className="App-header">
-          <h1 className="App-title">Ada Lovelace's social media feed</h1>
+          <h1 className="App-title">{timelineData.person}'s social media feed</h1>
         </header>
         <main className="App-main">
           <Timeline events = {timelineData.events}/>
