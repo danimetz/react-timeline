@@ -5,18 +5,6 @@ import Timeline from './components/Timeline';
 import './App.css';
 import timelineData from './data/timeline.json';
 
-const events = [
-  {
-    person: 'Danielle',
-    status: 'Hello World',
-    timestamp: '2018-11-26'
-  },
-  {
-    person: 'Leanne',
-    status: "Maroon is the best color",
-    timestamp: '2018-11-25'
-  }
-]
 class App extends Component {
   render() {
     console.log(timelineData);
